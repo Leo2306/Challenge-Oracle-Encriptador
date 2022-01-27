@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Encriptador</title>
+</head>
+
+    <body>
+
+        <h1 class="titulo">Código Secreto</h1>
+
+        <main class="main">
+
+            <div class="form">
+
+                <h2 class="titulo-form">Challenge - Encriptador de texto</h2>
+
+                <form id="formulario" class="formulario" action="" autocomplete="off">
+
+              
+                    <label class="form-label" for="texto">Ingrese el texto en el siguiente campo: </label>
+                    <input id="input-texto" class="form-input" type="text" name="texto">
+                    <p id="span-error" class="span-error"></p>
+    
+                    <div class="botones">
+                        <input id="btn-encriptar" class="boton" type="button" value="Encriptar">
+                        <input id="btn-desencriptar" class="boton" type="button" value="Desencriptar">
+                        <input id="btn-copy-E" class="boton "type="button" value="Copiar">
+                        <input id="btn-paste-E" class="boton "type="button" value="Pegar">
+                    </div>
+
+                    <label class="form-label" for="texto">Resultado: </label>
+                    <input id="msg" class="form-input" type="text" readonly>
+                
+                    <p id="error-copiar" class="span-error"></p>
+
+                    <div class="botones">
+                        <input id="btn-copy-D" class="boton "type="button" value="Copiar">
+                        <input id="btn-paste-D" class="boton "type="button" value="Pegar">
+                        <input id="btn-limpiar" class="boton "type="button" value="limpiar">
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="challenge-info">
+                
+                <img class="logo-alura" src="img/alura-logo.svg" alt="alura-logo">
+
+                <h3>Codigo Secreto: Reglas de encriptacion</h3>
+
+                <ul>
+                    <li>"a" debe ser convertida en "ai"</li>
+                    <li>"e" debe ser convertida en "enter"</li>
+                    <li>"i" debe ser convertida en "imes"</li>
+                    <li>"o" debe ser convertida en "ober"</li>
+                    <li>"u" debe ser convertida en "ufat"</li>
+                </ul>
+
+                <p>No se aceptan caracteres especiales, mayúsculas ni letras con acentos</p>
+
+                <div class="iconos">
+
+                    <p>Hecho por: <span>Leonardo Narvaja</span></p>
+
+                    <a href="https://github.com/Leo2306">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
+                    </a>
+
+                    <img class="flag" src="img/argentina-icono.svg" alt="">
+
+                </div>
+                
+            </div>
+
+        </main>
+
+    <script src="js/botones.js"></script>
+    <script src="js/encriptar-desencriptar.js"></script>
+
+    </body>
+
+</html>
