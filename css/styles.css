@@ -124,11 +124,6 @@ ul {
     padding: 0;
 }
 
-.github-icon {
-    position: absolute;
-    z-index: 100;
-}
-
 .iconos {
     display: flex;
     justify-content: center;
